@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.heinenj.heinenjocelinas.Category">
+
+    <TextView android:text="Categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:id="@+id/TitreCate"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ecrivain"
+        android:id="@+id/Ecrivain"
+        android:layout_below="@+id/TitreCate"
+        android:onClick="goEcrivain"
+        android:background="@drawable/menu"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+
+
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sport"
+        android:layout_below="@+id/Ecrivain"
+        android:onClick="goSport"
+        android:background="@drawable/menu"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Back"
+        android:onClick="back"
+        android:background="@drawable/backnext"
+        android:textColor="#ffffff"
+        />
+
+
+
+</RelativeLayout>
